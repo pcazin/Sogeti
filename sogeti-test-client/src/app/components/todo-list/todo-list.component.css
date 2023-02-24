@@ -1,0 +1,29 @@
+h1 {
+  text-align: center;
+}
+
+#main-container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px
+}
+
+#add-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+#add {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+#todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}

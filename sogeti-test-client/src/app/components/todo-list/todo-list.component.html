@@ -1,0 +1,15 @@
+<div id="main-container">
+  <div id="add-container">
+    <h1>Todo List !</h1>
+    <a routerLink="/new"><button id="add" class="btn btn-primary">Ajouter</button></a>
+  </div>
+  
+  <ng-container *ngIf="todoList$">
+    <div id="todo-container">
+      <app-todo *ngFor="let todo of todoList$ | async" [todo]="todo" 
+        (deleteEvent)="deleteTodo($event)"
+        (doneEvent)="done($event)">
+      </app-todo>
+    </div>
+  </ng-container>
+</div>

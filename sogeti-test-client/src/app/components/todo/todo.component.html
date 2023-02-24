@@ -1,0 +1,9 @@
+<div class="todo">
+  <p [ngClass]="{'isDone': todo.state === 'Done'}" (click)="onSeeDetails()">{{ todo.title }}</p>
+  <button [ngClass]="{'btn-primary': todo.state === 'ToBeDone', 'btn-danger': todo.state === 'Done'}" class="btn" (click)="onChangeState()">
+    {{
+      todo.state === 'Done' ? 'Retirer' : 'Fait'
+    }}
+  </button>
+
+</div>

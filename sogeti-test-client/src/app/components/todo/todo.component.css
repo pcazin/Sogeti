@@ -1,0 +1,26 @@
+.todo {
+  background: rgb(209, 214, 253);
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 0 10px 0 0;
+  text-align: justify;
+  gap: 80px
+}
+
+.todo > p {
+  margin: 0;
+  padding: 15px 0 15px 15px;
+  cursor: pointer;
+}
+
+.isDone {text-decoration: line-through;}
+
+button {
+  min-width: 72.5px !important;
+}
