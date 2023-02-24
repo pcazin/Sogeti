@@ -49,6 +49,23 @@ Le server tourne sur le port 8080 de voitre machine.
 Si le server Angular est lancé sur un port différent de 4200, 
 veillez a modifier/ajouter l'origine dans TestApplication -> WebMvcConfigurer.
 
+Résultats :
+
+## Todo list
+![alt text](/images/Todolist.png)
+
+## Changement d'état
+![alt text](/images/Todolist2.png)
+
+## Ajouter un todo
+![alt text](/images/new.png)
+
+## Ajout dans la Todo list
+![alt text](/images/after_new.png)
+
+## Details
+![alt text](/images/details.png)
+
 
 
 
