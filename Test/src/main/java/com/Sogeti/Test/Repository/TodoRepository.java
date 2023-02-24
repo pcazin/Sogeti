@@ -13,7 +13,7 @@ public class TodoRepository {
 
     List<Todo> todoList = new ArrayList<>(Arrays.asList(
             new Todo("Faire les courses", "pain, eau, viande, carottes, céréales pour les enfants, penser à acheter des pensements."),
-            new Todo("Appeler mon client"),
+            new Todo("Appeler mon client."),
             new Todo("Préparer le planning des vacances de noel.")
     ));
 
@@ -42,5 +42,14 @@ public class TodoRepository {
             }
         }
         return todoList;
+    }
+
+    public Todo getById(String id) {
+        for(Todo todo: todoList) {
+            if(todo.getId().toString().equals(id)) {
+                return todo;
+            }
+        }
+        return null;
     }
 }

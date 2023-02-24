@@ -32,4 +32,9 @@ public class TodoController {
         return ResponseEntity.ok().body(service.delete(todo));
     }
 
+    @GetMapping("/getById/{id}")
+    public ResponseEntity<Todo> getById(@PathVariable String id) {
+        return ResponseEntity.ok().body(service.getById(id));
+    }
+
 }

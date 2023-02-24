@@ -1,0 +1,17 @@
+#details-container p, #details-container h1  {
+  max-width: 500px;
+}
+
+#details-container {
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+#retour {
+  position: absolute;
+  left: -100px;
+  top: -100px;
+}
