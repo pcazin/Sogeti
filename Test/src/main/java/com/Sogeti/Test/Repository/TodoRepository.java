@@ -20,4 +20,27 @@ public class TodoRepository {
     public List<Todo> findAll() {
         return todoList;
     }
+
+    public List<Todo> done(Todo todo) {
+        for(Todo element: todoList ) {
+            if(element.getId().equals(todo.getId())) {
+                element.setState(TodoStateEnum.Done);
+                int index = todoList.indexOf(element);
+                todoList.remove(index);
+                todoList.add(element);
+                break;
+            }
+        }
+        return todoList;
+    }
+
+    public List<Todo> delete(Todo todo) {
+        for(int i = 0; i < todoList.size(); i++) {
+            if(todoList.get(i).getId().equals(todo.getId())) {
+                System.out.println(i);
+                todoList.remove(i);
+            }
+        }
+        return todoList;
+    }
 }

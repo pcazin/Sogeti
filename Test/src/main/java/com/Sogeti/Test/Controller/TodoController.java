@@ -22,4 +22,14 @@ public class TodoController {
         return ResponseEntity.ok().body(service.findAll());
     }
 
+    @PutMapping("/done")
+    public ResponseEntity done(@RequestBody Todo todo) {
+        return ResponseEntity.ok().body(service.done(todo));
+    }
+
+    @DeleteMapping("/delete")
+    public ResponseEntity delete(@RequestBody Todo todo) {
+        return ResponseEntity.ok().body(service.delete(todo));
+    }
+
 }
