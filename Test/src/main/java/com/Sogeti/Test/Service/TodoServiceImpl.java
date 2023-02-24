@@ -23,4 +23,14 @@ public class TodoServiceImpl implements ITodoService {
     public List<Todo> findAll() {
         return repo.findAll();
     }
+
+    @Override
+    public List<Todo> done(Todo todo) {
+        return repo.done(todo);
+    }
+
+    @Override
+    public List<Todo> delete(Todo todo) {
+        return repo.delete(todo);
+    }
 }
