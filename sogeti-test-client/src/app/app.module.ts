@@ -14,6 +14,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import {MatInputModule } from '@angular/material/input';
 import { TodoDetailsComponent } from './components/todo-details/todo-details.component';
+import { NewTodoComponent } from './components/new-todo/new-todo.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { TodoDetailsComponent } from './components/todo-details/todo-details.com
     TodoListComponent,
     TodoComponent,
     TodoDetailsComponent,
+    NewTodoComponent
   ],
   imports: [
     BrowserModule,
