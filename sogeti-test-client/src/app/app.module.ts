@@ -13,12 +13,14 @@ import { ReactiveFormsModule } from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import {MatInputModule } from '@angular/material/input';
+import { TodoDetailsComponent } from './components/todo-details/todo-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
-    TodoComponent
+    TodoComponent,
+    TodoDetailsComponent,
   ],
   imports: [
     BrowserModule,

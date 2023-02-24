@@ -33,4 +33,9 @@ public class TodoServiceImpl implements ITodoService {
     public List<Todo> delete(Todo todo) {
         return repo.delete(todo);
     }
+
+    @Override
+    public Todo getById(String id) {
+        return repo.getById(id);
+    }
 }

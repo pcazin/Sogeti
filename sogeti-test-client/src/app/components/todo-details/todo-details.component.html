@@ -1,0 +1,9 @@
+<ng-container *ngIf="todo$ | async as todo">
+  <div id="details-container">
+    <button class="btn btn-primary" id="retour" routerLink="">
+      retour
+    </button>
+    <h1>Titre: <span class="text-primary">{{todo.title}}</span></h1>
+    <p>{{ todo.description ? todo.description : "Aucune description." }}</p>
+  </div>
+</ng-container>

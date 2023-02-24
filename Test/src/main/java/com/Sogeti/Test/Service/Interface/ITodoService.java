@@ -8,4 +8,5 @@ public interface ITodoService {
     List<Todo> findAll();
     List<Todo> done(Todo todo);
     List<Todo> delete(Todo todo);
+    Todo getById(String id);
 }
