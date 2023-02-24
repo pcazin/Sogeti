@@ -9,4 +9,5 @@ public interface ITodoService {
     List<Todo> done(Todo todo);
     List<Todo> delete(Todo todo);
     Todo getById(String id);
+    List<Todo> add(Todo todo);
 }

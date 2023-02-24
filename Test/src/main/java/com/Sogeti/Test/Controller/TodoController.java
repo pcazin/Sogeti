@@ -37,4 +37,8 @@ public class TodoController {
         return ResponseEntity.ok().body(service.getById(id));
     }
 
+    @PostMapping("/add")
+    public ResponseEntity add(@RequestBody Todo todo) {
+        return ResponseEntity.ok().body(service.add(todo));
+    }
 }

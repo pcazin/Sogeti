@@ -38,4 +38,9 @@ public class TodoServiceImpl implements ITodoService {
     public Todo getById(String id) {
         return repo.getById(id);
     }
+
+    @Override
+    public List<Todo> add(Todo todo) {
+        return repo.add(todo);
+    }
 }

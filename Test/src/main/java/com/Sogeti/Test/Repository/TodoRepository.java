@@ -52,4 +52,9 @@ public class TodoRepository {
         }
         return null;
     }
+
+    public List<Todo> add(Todo todo) {
+        todoList.add(0, todo);
+        return todoList;
+    }
 }

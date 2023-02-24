@@ -1,0 +1,17 @@
+<h1>Ajouter une tâche</h1>
+
+<form id="form-container">
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Titre de la tache</mat-label>
+    <input matInput value="Demain..." [formControl]="title">
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <mat-label>Description</mat-label>
+    <textarea matInput [formControl]="description"></textarea>
+  </mat-form-field>
+
+  <button class="btn btn-primary" (click)="onSubmit()">Ajouter</button>
+
+</form>
